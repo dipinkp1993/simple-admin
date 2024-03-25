@@ -6,7 +6,7 @@ use GuzzleHttp\Client;
 use Livewire\Volt\Volt;
 Route::view('/', 'welcome');
 Route::get('/test',function(){
-    //$url="https://hexprojects.in/Service-Provider-Customer-Staging/api/country/list";
+   
     $url="http://localhost/api/list/";
     $client = new Client(['base_uri' => 'http://localhost',
     'timeout'  => 2.0]);
